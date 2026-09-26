@@ -1,0 +1,33 @@
+const express = require('express');
+const router = express.Router();
+
+
+// user routes
+router.use("/auth", require("./auth.routes"));
+router.use('/products', require('./products.routes'));
+router.use('/categories', require('./categories.routes'));
+router.use('/cart', require('./cart.routes'));
+router.use('/checkout', require('./checkout.routes'));
+router.use('/address', require('./address.routes'));
+router.use('/addresses', require('./address.routes'));
+router.use('/orders', require('./order.routes'));
+router.use('/carousel', require('./carousel.routes'));
+router.use('/user', require('./user.routes'));
+router.use('/announcement', require('./announcement.routes'));
+
+
+
+// admin routes
+router.use('/admin/auth', require('./admin/adminAuth.routes'));
+router.use('/admin/products', require("./admin/adminProduct.routes"));
+router.use('/admin/categories', require("./admin/adminCategories.routes"));
+router.use('/admin/orders', require("./admin/adminOrders.routes"));
+router.use('/admin/carousel', require("./admin/adminCarousel.routes"));
+router.use('/admin/colors', require("./admin/adminColors.routes"));
+router.use('/admin/sizes', require("./admin/adminSizes.routes"));
+router.use('/admin/announcement', require('./admin/adminAnnouncement.routes'));
+router.use('/admin/tax', require('./admin/adminTax.routes'));
+
+
+
+module.exports = router;

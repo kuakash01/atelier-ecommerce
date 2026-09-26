@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient: Deep Luxury Noir -->
+    <radialGradient id="bgGrad" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#1c1c20" />
+      <stop offset="60%" stop-color="#0f0f12" />
+      <stop offset="100%" stop-color="#060607" />
+    </radialGradient>
+
+    <!-- Luxury Champagne Gold Gradient for Monogram -->
+    <linearGradient id="goldSheen" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#FBF0D9" />
+      <stop offset="25%" stop-color="#E2C17D" />
+      <stop offset="50%" stop-color="#BE9341" />
+      <stop offset="75%" stop-color="#8F6A22" />
+      <stop offset="100%" stop-color="#DFBD77" />
+    </linearGradient>
+
+    <!-- Subtle Bevel / Glow Rim -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DEB2" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#BE9341" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.8" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base Frame -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="none" stroke="url(#rimGrad)" stroke-width="4" />
+
+  <!-- Atelier Monogram Group Centered -->
+  <g filter="url(#subtleGlow)">
+    <!-- Main Architectural 'A' Monogram Centered -->
+    <path d="
+      M 256,104
+      C 264,104 274,110 280,120
+      L 394,402
+      C 398,412 406,416 416,416
+      L 424,416
+      L 424,428
+      L 338,428
+      L 338,416
+      L 350,416
+      C 360,416 364,410 360,400
+      L 338,342
+      L 190,342
+      L 166,402
+      C 162,412 166,416 176,416
+      L 188,416
+      L 188,428
+      L 100,428
+      L 100,416
+      L 112,416
+      C 124,416 130,410 136,396
+      L 242,122
+      C 246,110 250,104 256,104
+      Z
+      M 264,172
+      L 204,316
+      L 328,316
+      Z
+    " fill="url(#goldSheen)" fill-rule="evenodd" />
+
+    <!-- Haute Couture Atelier Diamond Accent above apex -->
+    <path d="
+      M 256,76
+      L 263,87
+      L 256,98
+      L 249,87
+      Z
+    " fill="#FBF0D9" opacity="0.95" />
+  </g>
+</svg>
